@@ -38,4 +38,4 @@ before-build = "make clean && make c_lib"
 
 [tool.cibuildwheel.windows]
 archs = ["AMD64"]
-before-build = 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.35.32215\bin\HostX86\x64\cl.exe /c "ada_url/ada.cpp" /std:c++17 /O2 /Fo"ada_url/ada.obj"'
+before-build = '"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.35.32215\bin\HostX86\x64\cl.exe" /c "ada_url/ada.cpp" /std:c++17 /O2 /Fo"ada_url/ada.obj"'
